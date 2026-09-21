@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>薬味・調理法 相関図</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>薬味 × 調理法 相関図</h1>
+    <p class="lead">薬味を選ぶと、調理によって「五味＋辛味・渋味・香り」がどう変化するかを相対評価で表示します。</p>
+
+    <section class="panel">
+      <h2>薬味・調味料を選択</h2>
+      <div id="ingredient-list" class="ingredient-list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="chart-head">
+        <div>
+          <h2 id="chart-title">薬味を選択してください</h2>
+          <p class="note">0＝ほぼ出ない / 5＝強く出る。絶対値ではなく、各具材の中での相対的な出方の目安です。</p>
+        </div>
+      </div>
+      <div id="chart-wrap" class="chart-wrap empty">薬味を選択すると相関図が表示されます。</div>
+    </section>
+  </main>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
